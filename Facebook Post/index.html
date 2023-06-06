@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook-post</title>
+    <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e125e2b600.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="app.js " defer></script>
+
+</head>
+
+<body style="background-color: #f6f1f1">
+    <div class="container dis-flex col">
+
+        <div class="main-1">
+            <div class="create-post">
+                <p class="top-head">Create Post</p>
+                <div class="icon">
+                    <i class="fa-light fa-x cross-icon"></i>
+
+                </div>
+            </div>
+            <hr class="hori">
+            <div class="main-2">
+                <div class="profile">
+                    <img class="my-pp" src="img/profile-pic.jpg" alt="">
+                </div>
+                <div class="icon-btn">
+                    <p class="myName">انس انصاری</p>
+                    <button class="frnd-btn"><i class="fa-solid fa-user-group frnd-icon"></i>Friend</button>
+                </div>
+            </div>
+            <div class="bigText">
+                <textarea id="input-word" class="input-text" placeholder="What's on your mind انس?"
+                    type="text"></textarea>
+                <!-- <textarea name="" id="" > -->
+            </div>
+            <div class="diff-bg">
+                <img onclick="hidePics()" width="50px" class="img-1" src="img/bgStyle.png" alt="">
+                <div id="align">
+                    <img onclick="bgNone()" src="backgrounds/whiteBg.jpg" class="noneEffect" id="noneBg" alt="">
+                    <img id="getImg1" onclick="bgImg1()" class="m-img1" src="backgrounds/bg1.jpg" alt="">
+                    <img id="getImg2" onclick="bgImg2()" class="m-img2" src="backgrounds/bg2.jpg" alt="">
+                    <!-- <img id="getImg3" onclick="bgImg3()" class="m-img" src="backgrounds/bg3.jpg" alt=""> -->
+                    <img id="getImg4" onclick="bgImg4()" class="m-img3" src="backgrounds/bg4.jpg" alt="">
+                    <img id="getImg5" onclick="bgImg5()" class="m-img4" src="backgrounds/bg5.jpg" alt="">
+                    <img id="getImg6" onclick="bgImg6()" class="m-img5" src="backgrounds/bg6.jpg" alt="">
+                    <img id="getImg7" onclick="bgImg7()" class="m-img6" src="backgrounds/bg7.jpg" alt="">
+                </div>
+                <i class="fa-regular fa-face-smile smile-emoji"></i>
+            </div>
+            <div class="many-icons">
+                <p class="add-post">Add to your Post</p>
+                <div class="arr-icon">
+                    <img class="all-icon" src="img/gallery.png" alt="">
+                    <img class="all-icon" src="img/frnd.png" alt="">
+                    <img class="all-icon" src="img/smile.png" alt="">
+                    <img class="all-icon" src="img/location.png" alt="">
+                    <img class="all-icon" src="img/gif.png" alt="">
+                </div>
+            </div>
+            <div class="btn-post">
+                <button onclick="post()" class="post-btn">Post</button>
+            </div>
+        </div>
+        <div id="showPost" class="post-show">
+            <div class="top-heading">
+                <h3 class="post-head">Your Post will Show here</h3>
+                <hr class="horii">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- <div class="like-portion">
+        <div class="heart">
+            <h6>Like</h6>
+            <i onclick="likeColor()" id="likeColor" class="fa-regular fa-heart heart-align"></i>
+        </div>
+        <div class="comment">
+            <h6>Comment</h6>
+            <i class="fa-sharp fa-light fa-comments comment-align"></i>
+        </div>
+        <div class="share">
+            <h6>Share</h6>
+            <i class="fa-light fa-share-from-square share-align"></i>
+        </div>
+    </div> -->
+
+
+
+
+    <script src="
+https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js
+"></script>
+</body>
+
+</html>
